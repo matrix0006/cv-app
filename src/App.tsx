@@ -1,20 +1,15 @@
 import React from "react";
 import Container from "react-bootstrap/esm/Container";
-import Row from "react-bootstrap/esm/Row";
-import "./App.css";
-import { LeftSection } from "./layout/left-section/left-section";
-import { RightSection } from "./layout/right-section/right-section";
+import "./App.scss";
+import { Blockquote } from "./layout/blockquote/blockquote";
+import { Header } from "./layout/header/header";
 
 function App() {
   return (
-    <div style={{ height: "100vh" }}>
-      <Container fluid className="h-100 d-flex flex-column ">
-        <Row className="h-100">
-          <LeftSection></LeftSection>
-          <RightSection></RightSection>
-        </Row>
-      </Container>
-    </div>
+    <Container>
+      <Header></Header>
+      <Blockquote></Blockquote>
+    </Container>
   );
 }
 

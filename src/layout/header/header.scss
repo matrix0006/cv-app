@@ -1,0 +1,14 @@
+.header {
+  margin: 30px;
+
+  &__header-left {
+    h2 {
+      margin: 0 5px;
+      font-size: 1.45rem;
+    }
+  }
+
+  a {
+    color: #292b2c !important;
+  }
+}
