@@ -27,7 +27,7 @@ export const WorkHistory = () => {
       <h1>Work History</h1>
       <hr></hr>
       {histories.map((history, index) => (
-        <History {...history}></History>
+        <History key={index} {...history}></History>
       ))}
     </div>
   );
