@@ -1,8 +1,9 @@
 import React from "react";
 import { OverlayTrigger, Tooltip } from "react-bootstrap";
 import angularLogo from "../../assets/icons/angular.png";
-import typescriptLogo from "../../assets/icons/typescript.png";
 import reactLogo from "../../assets/icons/react.png";
+import typescriptLogo from "../../assets/icons/typescript.png";
+import bootstrapLogo from "../../assets/icons/bootstrap.png";
 import "../../styles/container.scss";
 import "./skills.scss";
 
@@ -18,6 +19,10 @@ const logos = [
   {
     name: "React",
     import: reactLogo,
+  },
+  {
+    name: "Bootstrap",
+    import: bootstrapLogo
   }
 ];
 
@@ -28,7 +33,7 @@ export const Skills = () => {
       <hr></hr>
       {logos.map((logo, index) => {
         return (
-          <span className="mr-2">
+          <span className={index === logos.length - 1 ? undefined : "mr-2"}>
             <OverlayTrigger
               key={index}
               placement="top"
