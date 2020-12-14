@@ -5,7 +5,7 @@ export interface WorkHistoryProps {
   companyName?: string;
   period?: string;
   description?: string;
-  techStack?: string;
+  techStack?: string[];
 }
 
 export const History = (props: WorkHistoryProps) => {
@@ -14,7 +14,7 @@ export const History = (props: WorkHistoryProps) => {
     <div>
       <strong>{position}</strong>/ {companyName} / <strong>{period}</strong>
       <br></br>
-      <strong>Tech stack:</strong> {techStack}
+      {techStack?.join('/ ')}
       <br></br>
       {description}
       <hr></hr>

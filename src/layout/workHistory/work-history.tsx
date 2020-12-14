@@ -9,7 +9,7 @@ const histories: WorkHistoryProps[] = [
     description:
       "Working on a budget management web application for network operator company Mobifone",
     position: "Front-end Developer",
-    techStack: "Angular, Bootstrap, RxJS, Typescript, RamdaJS",
+    techStack: ['Angular', 'Bootstrap', 'RxJS', 'Typescript', 'RamdaJS'],
   },
   {
     companyName: "Teso",
@@ -17,7 +17,7 @@ const histories: WorkHistoryProps[] = [
     description:
       "Working on an HR and staff evaluation project for a Japanese client",
     position: "Front-end Developer",
-    techStack: "Angular, Bootstrap, Typescript",
+    techStack: ['Angular', 'Bootstrap', 'Typescript'],
   },
 ];
 
