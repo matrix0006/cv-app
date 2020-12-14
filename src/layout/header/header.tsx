@@ -13,14 +13,16 @@ export const Header = () => {
         <h1 className="display-4">Lê Huỳnh Hải Triều</h1>
         <h2>Developer</h2>
       </Col>
-      <Col sm={6} className="d-flex justify-content-end">
-        <a target="_blank" href={linkedinUrl}>
-          linkedin
-        </a>
-        /
-        <a target="_blank" href={githubUrl}>
+      <Col sm={6}>
+        <div className="float-right">
+          <a target="_blank" rel="noreferrer" href={linkedinUrl}>
+            linkedin
+          </a>
+          /
+          <a target="_blank" rel="noreferrer" href={githubUrl}>
           github
-        </a>
+          </a>
+        </div>
       </Col>
     </Row>
   );

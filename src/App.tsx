@@ -7,7 +7,7 @@ import { WorkHistory } from "./layout/workHistory/work-history";
 
 function App() {
   return (
-    <Container >
+    <Container>
       <Header></Header>
       <Blockquote></Blockquote>
       <WorkHistory></WorkHistory>
